@@ -8,8 +8,8 @@ if (process.env.NODE_ENV === "PRODUCTION") {
         dialect: "postgres",
         dialectOptions: {
             ssl: {
-                rejectUnauthorize: false
-            },
+                rejectUnauthorized: false,
+            }
         }
     })
 } else {
