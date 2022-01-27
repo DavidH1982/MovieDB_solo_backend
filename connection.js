@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === "PRODUCTION") {
         }
     })
 } else {
-    connection = new Sequelize(process.env.DB_URI);
+    connection = new Sequelize(process.env.DATABASE_URI);
     console.log("Connection to DB Successful!");
 }
 
